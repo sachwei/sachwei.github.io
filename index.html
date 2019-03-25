@@ -529,68 +529,18 @@
 
       
         
-          
-            <p>最近开始想静下心来写一些文字，积累些看得见的东西跟大家分享，同时练习下文字能力，平时虽然能够静下来新来编码但是真的没办法写总结。<br>做什么事都要有点动力，作为程序猿，自己搭个博客显然目前让我很有动力。下面简单记录下搭建的过程，也有一些自己总结的小细节。</p>
+          <p>最近开始想静下心来写一些文字，积累些看得见的东西跟大家分享，同时练习下文字能力，平时虽然能够静下来新来编码但是真的没办法写总结。<br>做什么事都要有点动力，作为程序猿，自己搭个博客显然目前让我很有动力。下面简单记录下搭建的过程，也有一些自己总结的小细节。</p>
 <h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- nodejs</span><br><span class="line">- git</span><br><span class="line"></span><br><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init projectName</span><br><span class="line"><span class="built_in">cd</span> projectName</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>运行即可查看效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
-<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-d, –deploy</td>
-<td>文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td>-w, –watch</td>
-<td>监视文件变动</td>
-</tr>
-<tr>
-<td>-p, –port</td>
-<td>重设端口</td>
-</tr>
-<tr>
-<td>-s, –static</td>
-<td>只使用静态文件</td>
-</tr>
-<tr>
-<td>-l, –log</td>
-<td>启动日记记录，使用覆盖记录格式</td>
-</tr>
-<tr>
-<td>-g, –generate</td>
-<td>生成静态文件</td>
-</tr>
-<tr>
-<td>-n, –new layout title</td>
-<td>创建博客</td>
-</tr>
-</tbody>
-</table>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ol>
-<li>注册github，新建’账户名’+’.github.io’的仓库</li>
-<li>在项目_config.yml中配置git信息,如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/yourname/yourname.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><p>通过下面命令编译发布，同时有个小技巧，可以在package.json中配置快捷命令。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line">或</span><br><span class="line"></span><br><span class="line">npm run publish</span><br><span class="line"></span><br><span class="line">提前配置：</span><br><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">  &quot;publish&quot;: &quot;hexo clean &amp;&amp; hexo g &amp;&amp; hexo d&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<!-- 来必力City版安装代码 -->
-<p><div id="lv-container" data-id="city" data-uid="MTAyMC80MzM2OS8xOTkxMA=="><br>    <script type="text/javascript"><br>   (function(d, s) {<br>       var j, e = d.getElementsByTagName(s)[0];</p>
-<pre><code>if (typeof LivereTower === &apos;function&apos;) { return; }
-
-j = d.createElement(s);
-j.src = &apos;https://cdn-city.livere.com/js/embed.dist.js&apos;;
-j.async = true;
-
-e.parentNode.insertBefore(j, e);
-</code></pre><p>   })(document, ‘script’);<br>    </script></div></p>
-<p><noscript> 为正常使用来必力评论功能请激活JavaScript</noscript><br><br><!-- City版安装代码已完成 --></p>
-
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/25/hexo/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
